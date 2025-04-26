@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;npx 
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005ddd;
+  }
+  
+  img {
+    max-width: 100px;
+    margin: 10px 0;
+  }
+  
+  #weatherResult p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+/* Toggle Switch */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4f46e5;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark .container {
+    background: rgba(30, 30, 30, 0.95);
+  }
+  
+  body.dark input[type="text"],
+  body.dark button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #666;
+  }
+  
+  body.dark button:hover {
+    background-color: #555;
+  }
+  .unit-toggle {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    align-items: center;
+  }
+  
+  .unit-toggle select {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+  }
+  body.dark .unit-toggle select {
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #666;
+  }
+        
