@@ -4,7 +4,7 @@ document.getElementById('unitSelect').value = selectedUnit;
 let selectedLanguage = localStorage.getItem('lang') || 'en';
 document.getElementById('languageSelect').value = selectedLanguage;
 
-const apiKey = '5565261cab45b630d9d2483a30097e76'; // ⚡ put your real API key here
+const apiKey = 'YOUR_API_KEY'; // ⚡ put your real API key here
 const getWeatherBtn = document.getElementById('getWeatherBtn');
 const getLocationBtn = document.getElementById('getLocationBtn');
 const cityInput = document.getElementById('cityInput');
